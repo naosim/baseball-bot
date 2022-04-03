@@ -127,11 +127,14 @@ function run(dummy) {
     }, {
     });
     if (!runnableHours[now.getHours()]) {
+        return;
     }
     const chatPost = function(text) {
         return new Promise((resolve, reject)=>{
             try {
                 console.log(text);
+                const spaceName = "残業スタジアム";
+                new GoogleChatClient(roomNameConvertMapDefault).post(spaceName, text);
                 resolve();
             } catch (e) {
                 reject(e);
