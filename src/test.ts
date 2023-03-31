@@ -1,5 +1,5 @@
-import {BasballBot} from "./baseballbot.ts"
-import { FetchDeno } from "./infra/deno/fetchDeno.ts";
+import {BasballBot} from "./baseballbot"
+import { FetchDeno } from "./infra/deno/fetchDeno";
 
 async function dryRun() {
   const chatPost = function(text: string): Promise<void> {
@@ -21,4 +21,4 @@ async function dryRun() {
   await basballBot.run(context);
 }
 
-await dryRun();
+dryRun();

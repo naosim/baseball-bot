@@ -1,0 +1,23 @@
+{
+  "name": "baseball-bot",
+  "version": "1.0.0",
+  "description": "プロ野球の状況を通知するボット",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://naosim@github.com/naosim/baseball-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naosim/baseball-bot/issues"
+  },
+  "homepage": "https://github.com/naosim/baseball-bot#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}

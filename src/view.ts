@@ -1,4 +1,4 @@
-import {Game} from "./domain.ts"
+import {Game} from "./domain"
 export class View {
   static toText(games: Game[]): string {
     return games.map(View.gameToText).join("\n--\n")
