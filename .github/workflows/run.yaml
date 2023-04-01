@@ -1,0 +1,14 @@
+name: mynoteactions
+on: 
+  workflow_dispatch:
+jobs:
+  insert-todays-title:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: NODE_OPTIONS='--experimental-fetch' ./node_modules/.bin/ts-node src/test.ts
