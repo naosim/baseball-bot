@@ -1,5 +1,5 @@
-import {Ymd, BaseballParser} from "./parser.ts"
-import {View} from "./view.ts"
+import {Ymd, BaseballParser} from "./parser"
+import {View} from "./view"
 
 enum Target {
   today = "today",

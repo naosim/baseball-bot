@@ -1,5 +1,5 @@
-import {BasballBot} from "./baseballbot.ts"
-import { FetchGas } from "./infra/gas/FetchGas.ts";
+import {BasballBot} from "./baseballbot"
+import { FetchGas } from "./infra/gas/FetchGas";
 declare const GoogleChatClient: any;
 declare const roomNameConvertMapDefault: string;
 

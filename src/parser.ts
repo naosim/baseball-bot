@@ -1,4 +1,4 @@
-import {Game} from "./domain.ts"
+import {Game} from "./domain"
 
 // ここはhtml依存モリモリでOK
 
