@@ -11,4 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm install
-      - run: NODE_OPTIONS='--experimental-fetch' ./node_modules/.bin/ts-node src/test.ts
+      - name: get baseball
+        env: 
+          GOOGLE_CHAT_URL: ${{ secrets.GOOGLE_CHAT_URL }}
+        run: NODE_OPTIONS='--experimental-fetch' ./node_modules/.bin/ts-node src/test.ts
