@@ -16,4 +16,5 @@ jobs:
       - name: get baseball
         env: 
           GOOGLE_CHAT_URL: ${{ secrets.GOOGLE_CHAT_URL }}
+          TZ: "Asia/Tokyo"
         run: NODE_OPTIONS='--experimental-fetch' ./node_modules/.bin/ts-node src/test.ts
