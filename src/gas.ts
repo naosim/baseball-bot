@@ -1,4 +1,6 @@
-import {BasballBot} from "./baseballbot"
+// gas用のエントリーポイント
+
+import {BasballBot} from "./domain/baseballbot"
 import { FetchGas } from "./infra/gas/FetchGas";
 declare const GoogleChatClient: any;
 declare const roomNameConvertMapDefault: string;
