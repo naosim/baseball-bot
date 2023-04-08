@@ -3,7 +3,7 @@ import {BasballBot} from "./domain/baseballbot"
 import { FetchDeno } from "./infra/deno/fetchDeno";
 declare var fetch: any;
 
-async function dryRun() {
+async function run() {
   const url = process.env.GOOGLE_CHAT_URL;
   const chatPost = async function(text: string) {
     // 送信内容を生成
@@ -28,4 +28,4 @@ async function dryRun() {
   await basballBot.run(context);
 }
 
-dryRun();
+run();
