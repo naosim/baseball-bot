@@ -1,4 +1,5 @@
-import {BasballBot} from "./baseballbot"
+// actions用のエントリーポイント
+import {BasballBot} from "./domain/baseballbot"
 import { FetchDeno } from "./infra/deno/fetchDeno";
 declare var fetch: any;
 
